@@ -125,6 +125,9 @@ body
      background-color: #60453E;
                 ou
      background-color: rgb(0,0,255);
+                ou
+     color: rgba(red, green, blue, alpha);
+
          color: green;
           Colocar transparência
           color: rgba(0,0,0,0.5);
@@ -141,12 +144,131 @@ body
      <h1> Colocar imagens </h1>
      <img scr="fundo.jpg"/>
      <img scr="fundo.jpg"/>
+<figure>
+    <img src="_imagens/glass-oculos-preto-peq.png"/>
+    <figcaption>
+        <h3>Google Glass</h3>
+        <p>Um novo oculos bem feito</p>
+    </figcaption>
+</figure>
+deixar arquivo estilo no Css
+<link rel="stylesheet" href="">
+             ou
+<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
 
-
+Comentarios no css
+/* Formatação de imagem com legenda*/
      
+ Formatação de imagem no Css
 
+@charset "UTF-8";
 
+body {  
+     background-color: white;
+    color: rgba(0,0,0,1);
+
+}
+p { 
+    text-align : justify;
+    text-indent : 50px;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+    }
+
+    Listas "ol" no  html 
+<nav>
+    <li>blblblblb</li>
+</nav>
+  <!-- A teg <li> precisa estar em todos item da lista -->
+
+     lista com número   
+<nav>
+    <ol type="1">
+    <li>blblblblb</li>
+</ol>
+</nav>
+
+      lista com letra  
+      <nav>
+      <ol type="a">
+      <li>blblblblb</li>
+  <!-- Lembrando que da para usar "a" ou "A" -->
+</ol>
+  </nav>
+
+  lista com Número Romano
+  <nav>
+  <ol type="i">
+  <li>blblblblb</li>
+<!-- Lembrando que da para usar "i" ou "I" -->
+</ol>
+</nav>
  
+  começa a lista depois de outo Número
+  <nav>
+    <ol type="a" start="3"></ol>
+    <li>blblblblb</li>
+<!-- Lembrando que é para usar número 3 no lugar do "start"-->
+</ol>
+</nav>
 
+    Lista "ul" no html
+    <nav>
+        <ul>
+        <li>blblblblb</li>
+    </ul>
+    </nav>
 
+     Lista com quadrado
+     <nav>
+        <ul type="square">
+        <li>blblblblb</li>
+    </ul>
+    </nav>
 
+    Lista com circiulo
+    <nav>
+        <ul type="circle">
+        <li>blblblblb</li>
+    </ul>
+    </nav>
+
+    Lista com circulo padrão
+    <nav>
+        <ul type="disc">
+        <li>blblblblb</li>
+    </ul>
+    </nav>
+
+    Lista conectada
+    <nav>
+        <ul>
+        <li>blblblblb</li>
+        <ul> 
+        <li>blblblblb</li>
+        </ul>
+        <li>blblblblb</li>
+    </ul>
+    </nav>
+
+      Lista conectada com estilo
+      <nav>
+        <ul type="square">
+        <li>blblblblb</li>
+        <ul> 
+        <li>blblblblb</li>
+        </ul>
+        <li>blblblblb</li>
+     <!-- Lembrando que isso fuciona para "ul" e "ol"-->
+    </ul>
+    </nav>
+  
+       Link de alguma coisa  
+    <a href="https://www.youtube.com/watch?v=UfI2gE0-Gc0" >opening Re:zero</a> 
+
+    <a href="https://www.youtube.com/watch?v=UfI2gE0-Gc0" target="_blank">opening Re:zero</a> 
+
+    <a href="https://www.youtube.com/watch?v=UfI2gE0-Gc0" target="_self">opening Re:zero</a> 
