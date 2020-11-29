@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>testando o Jovem Script</title>
+
+    <script>
+       function acendelampada() {
+           //alert("lampada cendeu");
+           document.getElementById("luz"). src = "_imagens/lampada-acesa.jpg";
+       } 
+
+       function apagalampada(){
+           document.getElementById("luz"). src = "_imagens/lampada-apagada.jpg";
+       }
+
+       function quebrarlampada(){
+           document.getElementById("luz"). src = "_imagens/lampada-quebrada.jpg";
+       }
+
+    </script>
+</head>
+
+<body style="font-family: Arial, sans-serif;">testando o Jovem Script</h1>
+
+    <h1 style="font-family: Arial, sans-serif;">testando o Jovem Script</h1>
+    <h2>Acenda a lâmpada</h2>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendelampada()"  onmouseout= "apagalampada()" onclick="quebrarlampada()"/>
+</body>
+
+    <!--<h1> Testando o Jovem Script</h1>
+    <script>
+       /* document.write("olá, mundo!" + Date());*/
+        // alert("adíos mi amigo");
+    </script>-->
+
+    <script>
+        // onclick ou onmousemove
+    </script>
+
+
+
+<script>
+function mudarlampada(tipo) {
+    if (tipo == 1) {
+    arquivo = "_imagens/lampada-acesa".jpg;
+}
+
+    if (tipo == 2) {
+        arquivo = "_imagens/lampada-apagada".jpg;
+    }
+
+    if (tipo == 3) {
+        arquivo = "_imagens/lampada-quebrada".jpg;
+    }
+}
+    document.getElementById("luz"). src = arquivo;
+</script>
+
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudarlampada(1)"  onmouseout= "mudarlampada(2)" onclick="mudarlampada(3)"/>
+
+    </html>

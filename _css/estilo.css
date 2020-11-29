@@ -2,7 +2,7 @@
 
 
 @font-face {
-    font-family: "Fonte engraçada";
+    font-family: "Fonte engracada";
     src:url('../_fonts/computer-font.ttf');
     
 }
@@ -16,6 +16,8 @@
 body {  
      background-color: white;
     color: rgba(0,0,0,1);
+    font-family:arial, sans-serif;
+
 
 }
 div#interface {
@@ -39,7 +41,7 @@ background:url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
 }
 
 header#cabecalho h1 {
-    font-family: fonte engraçada, sans-serif;
+    font-family: "Fonte engracada", sans-serif;
     font-size: 30pt;
     font: weight 900;
     font-style:italic;
@@ -50,7 +52,7 @@ header#cabecalho h1 {
 }
 
 header#cabecalho h2 {
-    font-family: Fonte logo, sans-serif;
+    font-family: "Fonte logo", sans-serif;
     text-shadow: 0px 0px 3px;
     padding: 0px;
     margin-top:0px;
@@ -163,15 +165,36 @@ table#tabelaspec{
 table#tabelaspec td{
     border: black 1px solid;
     padding:10px;
-
+    text-align: center;
+    text-align: middle;
 }
 
-aside#lateral{
+table#tabelaspec td.ce{
+    color:#ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight:bold ;
+}
+
+table#tabelaspec td.cd{
+    background-color: #cecece;
+}
+
+table#tabelaspec caption{
+    color: #888888;
+    font-size:13pt ;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span{
     display: block;
-    width: 470px ;
     float: right;
-    
+    color: #000000;
+    font-size: 8pt;
+    margin-top:10px ;
 }
+
+
 
 footer#rodape{
     clear: both;
@@ -184,4 +207,77 @@ footer#rodape p{
     text-align: center;
     font-family: Arial, sans-serif;
 }
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color:#dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px; 
+    font-family: Arial, sans-serif;
+}
+
+header#cabecalho-artigo h1{
+    font-family: "Fonte engracada", sans-serif; 
+    font-size: 20pt;
+    color: black;
+    margin-bottom:0px ;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: rgb(14, 15, 15);
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    font-family: "Fonte logo";
+}
+
+header#cabecalho-artigo h3{}
+
+.direita{
+    text-align: right;  
+    font-family:arial, sans-serif;
+    color: gray;
+    font-size: 11pt
+}
+
+aside#lateral{
+    display: block;
+    width: 470px ;
+    float: right;
+    padding: 10px;
+    background-color: rgb(209, 209, 209);
+    margin-top:10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1 {
+    font-family: "fonte engracada", sans-serif;
+    font-size: 20pt;
+    color: black;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    font-family: "Fonte logo", sans-serif;
+    font-size: 13pt;
+    background-color: black;
+    padding: 5px;
+    color: white 
+
+}
+
+
+/* 
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a: hover {
+        text-decoration: underline;
+}
+*/
+
 
