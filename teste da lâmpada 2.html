@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head font-family:>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando o Jovem Script</title>
+    <h1>testando o Jovem Script</h1>
+    <script>
+        var quebrada = false;
+    function mudalampada(tipo) {
+    /*if (tipo == 1) {
+    arquivo = "_imagens/lampada-acesa.jpg";
+}
+    if (tipo == 2) {
+        arquivo = "_imagens/lampada-apagada.jpg";
+    }
+
+    if (tipo == 3) {
+        arquivo = "_imagens/lampada-quebrada.jpg";
+    }*/
+    
+    if (! quebrada) {
+    
+    document.getElementById("luz").src = "_imagens/" + tipo + ".jpg";
+
+if (tipo == 'lampada-quebrada') {
+    quebrada = true;
+}
+
+}
+ 
+ 
+}
+</script>
+ </head>
+ 
+ <body style="font-family: Arial, sans-serif;">testando o Jovem Script</h1>
+ 
+     <h1 style="font-family: Arial, sans-serif;">testando o Jovem Script</h1>
+     <h2>Acenda a lâmpada</h2>
+     <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudalampada('lampada-acesa')"  onmouseout= "mudalampada('lampada-apgada')" onclick="mudalampada('lampada-quebrada')"/>
+ </body>
+</html>>

@@ -37,26 +37,4 @@
     <script>
         // onclick ou onmousemove
     </script>
-
-
-
-<script>
-function mudarlampada(tipo) {
-    if (tipo == 1) {
-    arquivo = "_imagens/lampada-acesa".jpg;
-}
-
-    if (tipo == 2) {
-        arquivo = "_imagens/lampada-apagada".jpg;
-    }
-
-    if (tipo == 3) {
-        arquivo = "_imagens/lampada-quebrada".jpg;
-    }
-}
-    document.getElementById("luz"). src = arquivo;
-</script>
-
-    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudarlampada(1)"  onmouseout= "mudarlampada(2)" onclick="mudarlampada(3)"/>
-
-    </html>
+</html>
